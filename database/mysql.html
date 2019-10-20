@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MySqltutorial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(jessi.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Jessica Gustin Rahajeng</a></h1>
+				<span class="position">L200170026 INFORMATIKA<br> Universitas Muhammadiyah Surakarta<br>ig : @jessicarahajeng</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">MySQL</a></li>
+						<li><a href="#" data-nav-section="services">DML</a></li>
+						<li><a href="#" data-nav-section="skills">DDL</a></li>
+						<li><a href="#" data-nav-section="fulltext">FULLTEXT</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(about.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi !<br>It's about SQL</h1>
+						   					<h2>Let's get started!</h2>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(about2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>Hello<br>MySQL, DML, DDL, FULL TEXT</h1>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About mySQL</span>
+										<h1 class="colorlib-heading">MySQL</h1>
+										<p><strong>Apa itu mySQL?</strong><br>
+										MySQL adalah sebuah perangkat lunak sistem manajemen basis data SQL (bahasa Inggris: <i>database management system)</i> atau DBMS yang multialur, multipengguna. MySQL adalah implementasi dari system manajemen basisdata relasional (RDBMS). <br> 
+										Adapun fungsi suatu database yaitu menyimpan dan memelihara serta mengelola data, oleh karena itu penting bagi kita untuk mengetahui perintah dasar SQL yang dapat di gunakan untuk menyimpan dan memelihara serta mengelola data dalam database tersebut baik secara langsung maupun menggunakan macam-macam bahasa pemrograman.</p>
+										<strong>Keistimewaan MySQL</strong>
+										<ul>
+											<li><b>Portabilitas :</b> MySQL dapat berjalan stabil pada berbagai sistem operasi seperti Windows, Linux, FreeBSD, Mac Os X Server, Solaris, Amiga, dan masih banyak lagi.</li>
+											<li><b>Perangkat lunak sumber terbuka :</b> MySQL didistribusikan sebagai perangkat lunak sumber terbuka, di bawah lisensi GPL sehingga dapat digunakan secara gratis.</li>
+											<li><b>Multi-user :</b> MySQL dapat digunakan oleh beberapa pengguna dalam waktu yang bersamaan tanpa mengalami masalah atau konflik.</li>
+											<li><b>Performance tuning :</b> MySQL memiliki kecepatan yang menakjubkan dalam menangani query sederhana, dengan kata lain dapat memproses lebih banyak SQL per satuan waktu.</li>
+											<li><b>Ragam tipe data :</b> MySQL memiliki ragam tipe data yang sangat kaya, seperti signed / unsigned integer, float, double, char, text, date, timestamp, dan lain-lain.</li>
+											<li><b>Perintah dan Fungsi :</b> MySQL memiliki operator dan fungsi secara penuh yang mendukung perintah Select dan Where dalam perintah (query).</li>
+										</ul>
+										<br><strong>Perintah dalam MySQL</strong>
+										<ol type="1">
+											<li><b>SELECT</b><br>SELECT merupakan perintah dasar SQL yang di gunakan untuk memilih data dari database. Data yang di kembalikan di simpan dalam tabel yang di sebut result-set.
+												<br><table border='1'><tr><td> Syntax : select nama,email from [nama_table] </td></tr></table></li>
+											<li><b>SELECT DISTINCT</b><br>Perintah dasar SQL yang di gunakan untuk mengembalikan hanya nilai yang berbeda dari dalam sebuah tabel, dengan kata lain semua record duplikat (record dengan nilai yang sama) yang terdapat pada tabel akan di anggap sebagai satu record/nilai.
+												<br><table border='1'><tr><td> Syntax : SELECT DISTINCT kolom1, kolom2, ... FROM nama_tabel;  </td></tr></table>
+											</li>
+											<li><b>WHERE</b><br>Perintah WHERE merupakan perintah dasar SQL yang di gunakan untuk mem-filter hasil SELECT dengan mengekstrak record yang memenuhi persyaratan tertentu.
+												<br><table border='1'><tr><td> Syntax : SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi;  </td></tr></table>
+											</li>
+											<li><b>Perintah (operator) AND, OR dan NOT</b>Operator AND, OR dan NOT merupakan perintah dasar SQL yang biasanya di kombinasikan dengan perintah WHERE. 
+												Ketiganya di gunakan untuk mem-filter record berdasarkan suatu kondisi, operator AND akan menampilkan record apabila semua kondisi bernilai TRUE, operator OR akan menampilkan record apabila salah satu kondisi bernilai TRUE, 
+												sedangkan operator NOT akan menampilkan record apabila semua kondisi bernilai FALSE.
+											<br><table border='1'>
+													<tr>
+															<td align='center'> AND </td>
+															<td align='center'> OR </td>
+															<td align='center'> NOT </td>
+													</tr>
+													<tr>
+															<td> Syntax : SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi1 AND kondisi2 AND kondisi3 ...;  </td>
+															<td> Syntax : SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi1 OR kondisi2 OR kondisi3 ...;  </td>
+															<td> Syntax : SELECT kolom1, kolom2, ... FROM nama_tabel WHERE NOT kondisi;</td>
+													</tr>
+												</table>
+											</li>
+											<li><b>ORDER BY</b><br>Perintah ORDER BY merupakan perintah dasar SQL yang di gunakan untuk mengurutkan result-set dalam pengurutan ‘ascending’ atau ‘descending’. Secara default perintah ORDER BY menampilkan record dalam pengurutan ‘ascending’ (‘ASC’). 
+											Untuk mengurutkan ‘descending’, gunakan kata kunci ‘DESC’.
+											<br><table border='1'><tr><td> Syntax : SELECT kolom1, kolom2, ... FROM nama_tabel ORDER BY column DESC;  </td></tr></table>
+											</li>
+											<li><b>INSERT INTO</b><br>INSERT INTO merupakan perintah dasar SQL bagian dari perintah untuk DML (Data Manipulation Language) Saya asumsikan Anda telah faham perbedaan DDL, DCL, dan DML. 
+												Perintah INSERT INTO dapat di gunakan untuk menambahkan record baru ke dalam tabel.
+												<br><table border='1'><tr><td> Syntax : INSERT INTO nama_tabel VALUES (nilai1, nilai2, nilai3, ...);  </td></tr></table>
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<hr>
+								<section class="colorlib-about" data-section="about">
+										<div class="colorlib-narrow-content">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+														<div class="col-md-12">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+							<div class="col-md-12">
+									<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+							<span class="heading-meta">ABOUT DML</span>
+							<h2 class="colorlib-heading">DML(Data Manipulation Language)</h2>
+							<p><strong>Apa itu DML?</strong><br>
+								DML <i>Data Manipulation Language</i> adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan mengolah data di dalam table 
+								dan tidak terkait dengan perubahan struktur dan definisi tipe data dari objek database seperti table, column, dan sebagainya.</p>
+								<strong>Perintah dalam DML</strong>
+							<ol type='1'>
+									<li><b>SELECT</b><br>Perintah ini digunakan untuk mengambil dan menampilkan data dari tabel atau bahkan dari beberapa tabel dengan penggunaan relasi.
+										<br><table border='1'><tr><td> Syntax : select nama,email from [nama_table] </td></tr></table></li>
+									<li><b>UPDATE</b><br>Perintah update digunakan untuk memperbaharui data pada sebuah tabel.
+										<br><table border='1'><tr><td> Syntax : SELECT DISTINCT kolom1, kolom2, ... FROM nama_tabel;  </td></tr></table>
+									</li>
+									<li><b>INSERT</b><br>Perintah ini digunakan untuk memasukkan data baru ke dalam sebuah tabel. Perintah ini tentu saja bisa dijalankan ketika database dan tabel sudah dibuat.
+										<br><table border='1'><tr><td> Syntax : INSERT INTO nama_tabel VALUES (data1, data2, dst…);  </td></tr></table>
+									</li>
+									<li><b>DELETE</b><br>Perintah delete digunakan untuk menghapus data dari sebuah tabel.
+										<br><table border='1'><tr><td> Syntax : DELETE FROM nama_tabel WHERE kolom=data;  </td></tr></table>
+									</li>
+							</ol>
+							</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+							<div class="col-md-12">
+									<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+							<span class="heading-meta">ABOUT DDL</span>
+							<h2 class="colorlib-heading animate-box">DDL (Data Definition Language)</h2>
+							<p><strong>Apa itu DDL?</strong></p>DDL (<i>Data Definition Language</i>) adalah kumpulan perintah SQL yang digunakan untuk membuat (create), mengubah (alter) dan menghapus (drop) struktur dan definisi tipe data dari objek-objek database.</p>
+							<ol type='1'>
+									<li><b>CREATE</b><br>Perintah ini digunakan untuk membuat, termasuk di dalamnya membuat database baru, tabel baru view baru, dan kolom baru.
+										<br><table border='1'><tr><td> Syntax : CREATE DATABASE nama_database;</td></tr></table></li>
+									<li><b>ALTER</b><br>Perintah ALTER berfungsi untuk mengubah struktur tabel yang telah dibuat. Mencakup di dalamnya mengubah nama tabel, menambah kolom, mengubah kolom, menghapus kolom, dan memberikan atribut pada kolom.
+										<br><table border='1'><tr><td> Syntax : ALTER TABLE nama_tabel ADD nama_kolom datatype  </td></tr></table>
+									</li>
+									<li><b>DROP</b><br>Perintah DROP berfungsi untuk menghapus database atau tabel.
+										<br><table border='1'><tr><td> Syntax : DROP DATABASE nama_database; </td></tr></table>
+									</li>
+						</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-skills" data-section="fulltext">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+							<div class="col-md-12">
+									<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+							<span class="heading-meta">ABOUT FULLTEXT SEARCH</span>
+							<h2 class="colorlib-heading animate-box">FULLTEXT SEARCH</h2>
+							<p><strong>Apa itu FULL TEXT?</strong></p>Full‐Text, adalah fungsionalitas yang terdapat pada database (dalam hal ini database 
+							MySQL) yang memungkinkan user untuk melakukan pencarian tertentu dalam tabel dengan 
+							cara melakukan perbandingan string.</p><br>
+							<p>Sebelum mengenal lebih jauh mengenai Full-­‐Text Searching ada beberapa hal (prasyarat) 
+								yang perlu diketahui :</p>
+							<ul>
+								<li><i>Full-Text Searching</i> pada tulisan ini mengacu pada fungsionalitas yang terdapat pada 
+									database MySQL</li>
+								<li><i>Full-­‐text</i> index pada MySQL adalah index dengan tipe FULLTEXT; </li>
+								<li><i>Full-text index</i> hanya dapat digunakan pada database MyISAM dan dapat digunakan untuk kolom dengan tipe CHAR, VARCHAR, atau TEXT; </li>
+								<li><i>Full-text index </i>dapat dibuat saat proses pembuatan tabel dengan perintah “CREATE TABLE” atau saat perubahan struktur table yang sudah ada dengan menggunakan perintah “ALTER TABLE” atau “CREATE INDEX”. </li>
+							</ul>
+							<p>Berikut beberapa tipe penggunaan <i>Full-text Searching</i>:</p>
+							<ol type='1'>
+										<li><b>Natural Language</b><br>Berikut ini contoh penggunaan Full-Text Searching tipe Natural Language:
+										<br><p>Contoh 1:<br>
+											<b>SELECT * FROM article WHERE MATCH (title) AGAINST ('tutorial');</b><br>
+											Query diatas menghasilkan data pada field title yang mengandung kata "tutorial".<br>
+											<table border="1">
+												<tr>
+													<td align='center'>Id</td>
+													<td align='center'>Title</td>
+													<td align='center'>Body</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>PHP & Mysql : Tutorial Dasar</td>
+													<td>Pada tutorial kali ini,kita akan mencoba melakukan...</td>
+												</tr>
+											</table></p>
+											<p>Contoh 2:<br>
+												<b>SELECT * FROM article WHERE MATCH (title) AGAINST ('tutor');</b><br>
+												Perintah diatas tidak akan menghasilkan data, karena pencarian "tutor" tidak sama dengan pencarian "tutorial".<br>
+												</p>
+												<p>Contoh 3:<br>
+												Pencarian pada 2 field (title dan body) dapat dilakukan dengan menggunakan perintah:<br>
+												<b>SELECT * FROM article WHERE MATCH (title, body) AGAINST ('tutorial');</b><br>
+												Perintah diatas menghasilkan data sebagai berikut:<br>
+												<table border="1">
+													<tr>
+														<td align='center'>Id</td>
+														<td align='center'>Title</td>
+														<td align='center'>Body</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>PHP & Mysql : Tutorial Dasar</td>
+														<td>Pada tutorial kali ini,kita akan mencoba melakuka...</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Mysql</td>
+														<td>Tutorial penggunaan database masa kini...</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>MySQL - Pengenalan</td>
+														<td>tutorial MySQL di situs ini memang buat kamu-kamu...</td>
+													</tr>
+												</table></p></li>
+									<li><b>MySQL Boolean full-text searches</b><br>Tipe Boolean mengijinkan penggunaan operator boolean pada keyword pencarian.
+										Berikut daftar operator yang dapat digunakan adalah:
+										<table border="1">
+											<tr align="center">
+												<td width="25%">[non operator]</td>
+												<td width="75%">Secara default memiliki arti "atau" / "or"</td>
+											</tr>
+											<tr align="center">
+												<td>+</td>
+												<td>Keyword harus terdapat pada semua hasil yang didapat</td>
+											</tr>
+											<tr align="center">
+												<td>-</td>
+												<td>Keyword tidak boleh ada pada hasil yang didapat</td>
+											</tr>
+											<tr align="center">
+												<td>></td>
+												<td>Keyword termasuk pada hasil yang didapat dengan urutan berdasar ranking secara <i>increase</i></td>
+											</tr>
+											<tr align="center">
+												<td><</td>
+												<td>Keyword termasuk pada hasil yang didapat dengan urutan berdasar ranking secara <i>decrease</i></td>
+											</tr>
+											<tr align="center">
+												<td>()</td>
+												<td>Digunakan untuk melakukan <i>grouping</i> / pengelompokan dan dapat menambahkan operator lain untuk meningkatkan relevansi hasil pencarian</td>
+											</tr>
+											<tr align="center">
+												<td>~</td>
+												<td>Berfungsi sebagai operator <i>negasi</i>, jika sebuah <i>keyword</i> diberikan tanda ~, mengakibatkan relevansi/score minus</td>
+											</tr>
+											<tr align="center">
+												<td>*</td>
+												<td>Merupakan operator <i>wildcard</i></td>
+											</tr>
+											<tr align="center">
+												<td>""</td>
+												<td>Digunakan pada awal dan akhir keyword yang terdiri dari dua kata atau lebih</td>
+											</tr>
+										</table>
+										<p>Contoh 1:<br>
+											<b>SELECT * FROM article WHERE MATCH (title, body) AGAINST ('+mysql -database'IN BOOLEAN MODE);</b><br>
+											Perintah diatas menghasilkan data sebagai berikut :<br>
+											<table border="1">
+												<tr>
+													<td align='center'>Id</td>
+													<td align='center'>Title</td>
+													<td align='center'>Body</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>How To Use MySQL Well</td>
+													<td>after you went through a...</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Optimizing MySQL</td>
+													<td>In this tutorial we will show...</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>1001 MySQL Tricks</td>
+													<td>1. Never run mysqld as root. 2. ...</td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>MySQL Security</td>
+													<td>When configured properly, MySQL ...</td>
+												</tr>
+											</table>
+											Hasil yang diperoleh harus mengandung kata mysql dan tidak boleh mengandung kata database pada field title dan body.<br>
+											</p>
+											<p>Contoh 2 :<br>
+												<b>SELECT * FROM article WHERE MATCH (title, body) AGAINST ('tutor*' IN BOOLEAN MODE);</b></br>
+												Perintah diatas menghasilkan data sebagai berikut :
+												<table border="1">
+													<tr>
+														<td align='center'>Id</td>
+														<td align='center'>Title</td>
+														<td align='center'>Body</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>MySQL Tutorial</td>
+														<td>DBMS stands for DataBase...</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Optimizing MySQL</td>
+														<td>In this tutorial we will show...</td>
+													</tr>
+												</table>
+												Penambahan asterisk (*) pada awal atau akhir keyword berfungsi seperti perintah LIKE ‘tutor%’ .<br></p>
+
+											</li>
+									<li><b>Query Expansion</b><br>Berikut ini adalah cara membuat MySQL Query Expansion:
+										<br><b>SELECT column1, column2<br>
+											FROM table1<br>
+											WHERE MATCH(column1,column2) <br>
+											AGAINST('keyword',WITH QUERY EXPANSION);</b>
+									</li>
+						</div>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+			
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
